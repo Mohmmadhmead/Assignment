@@ -546,9 +546,11 @@ finaly : the console command for remove the older post than 3 days
  
  for automatic run want to run the cronjob
    
-    
+    ```
     
   preview for the project   
+  
+  
     
   ![alt tag](https://d.top4top.net/p_476r2all1.png)
 
@@ -566,4 +568,4 @@ finaly : the console command for remove the older post than 3 days
 
 ![alt tag](https://e.top4top.net/p_476fiinh8.png)
 
-    
+    ```
