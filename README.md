@@ -6,27 +6,7 @@ Open Sooq Assignment
 
 ![alt tag](https://f.top4top.net/p_476796bo1.png)
 
-```<php>
-  public function actionIndex()
-    {
 
-        $query = \app\models\Post::find();
-
-        $pagination = new \yii\data\Pagination([
-            'defaultPageSize' => 2,
-            'totalCount' => $query->count(),
-        ]);
-        $post = $query
-            ->offset($pagination->offset)
-            ->limit($pagination->limit)
-            ->all();
-
-        return $this->render('index', [
-            'post' => $post,
-            'pagination' => $pagination,
-        ]);
-            }
-```
 
 DIRECTORY STRUCTURE
 -------------------
@@ -65,4 +45,29 @@ backend
  .../post                        contains view files for post site
  .../site                        contains view files for Home site
     web/                         contains the entry script and Web resources
+
+
+First siteController
+```<php>
+  public function actionIndex()
+    {
+
+        $query = \app\models\Post::find();
+
+        $pagination = new \yii\data\Pagination([
+            'defaultPageSize' => 2,
+            'totalCount' => $query->count(),
+        ]);
+        $post = $query
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+
+        return $this->render('index', [
+            'post' => $post,
+            'pagination' => $pagination,
+        ]);
+            }
+```
+
 
