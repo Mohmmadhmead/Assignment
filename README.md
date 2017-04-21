@@ -4,6 +4,8 @@ Open Sooq Assignment
 
 [database]
 
+![alt tag](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
 DIRECTORY STRUCTURE
 -------------------
 
