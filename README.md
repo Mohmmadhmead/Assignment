@@ -69,8 +69,7 @@ First siteController
             'pagination' => $pagination,
         ]);
             }
-```
-
+-----------------------------------------------------------------------
  public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {// check if user has login
@@ -87,17 +86,15 @@ First siteController
         }
     }
     
-    
+    ---------------------------------------------------------------------
     public function actionSignup()
     {
         $model = new \common\models\SignUp() ;//get form data after submit  from common\models\signup
 
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {// if validate data then save it in user table
+
 $newuser=new \app\models\UserE();
-
-   
 $newuser->username=$model->username ;
-
 $newuser->password =$model->password;
 $newuser->id = null;
 $newuser->status = 10;
